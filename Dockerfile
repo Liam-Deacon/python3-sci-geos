@@ -4,7 +4,7 @@ RUN pip install --no-cache-dir pbr docutils sphinx setuptools cython
 
 # Install other key utilities
 RUN apt-get update && \
-  apt-get install -y make gcc && \
+  apt-get install -y make gcc g++ gfortran && \
   rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update \
